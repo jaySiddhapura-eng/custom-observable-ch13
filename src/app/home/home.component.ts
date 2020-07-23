@@ -26,6 +26,9 @@ export class HomeComponent implements OnInit, OnDestroy{
         let count = 0;
         setInterval(()=>{
           observer.next(count);
+          if(count > 3){
+            observer.error(new Error('count is greater then 3'));
+          }
           count++;}, 1000);
       }
     );
@@ -33,6 +36,11 @@ export class HomeComponent implements OnInit, OnDestroy{
     this.Subscription = customIntervalObservable.subscribe(
       data => {
         console.log(data);
+      },
+
+      error =>{
+        console.log(error);
+        alert(error.message);
       }
     );
 
