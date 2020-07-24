@@ -20,7 +20,7 @@ export class UserComponent implements OnInit {
     });
   }
 
-  onActiate(){
+  onActivate(){
     this.userSer.activatedEmitter.next(true);
   }
 }
