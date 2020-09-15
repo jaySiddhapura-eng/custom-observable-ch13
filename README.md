@@ -11,6 +11,8 @@
 
 ## Introduction
 
+## 	[:arrow_up:](#Table-of-Contents )<br>
+
 1. Observable emits different kind of data
 
 2. This data can be absorbed by observer (a code implemented by us)
@@ -53,6 +55,8 @@
 
 ## Custom Observable
 
+## 	[:arrow_up:](#Table-of-Contents )<br>
+
 1. Along with Default observable, we can make our own custom observable in angular
 
 2. Observable are not default part of typescript but implemented by rxjs library
@@ -79,6 +83,8 @@
    ~~~
 
 ## Custom Data Emitting Observable
+
+## 	[:arrow_up:](#Table-of-Contents )<br>
 
 1. Create an observable and emit the data [OBSERVABLE]
 
@@ -114,6 +120,8 @@
 
 ## Error or Completion Observable
 
+## 	[:arrow_up:](#Table-of-Contents )<br>
+
 1. Throwing an error as well as completion from observable
 
    ~~~typescript
@@ -148,6 +156,8 @@
 
 ## Operators
 
+## 	[:arrow_up:](#Table-of-Contents )<br>
+
 1. The data obtained from Observable is raw data
 
 2. This data can be transformed according to the need before it received by Observer
@@ -157,6 +167,8 @@
    ![OperatorLocation](assets/locationOfOperator.PNG)
 
 ## Implement Operators using Pipe
+
+## 	[:arrow_up:](#Table-of-Contents )<br>
 
 1. Every observable provided by rxjs library has method called ```pipe()```
 
@@ -213,6 +225,8 @@
    ~~~
 
 ## Subjects
+
+## 	[:arrow_up:](#Table-of-Contents )<br>
 
 1. Subjects are specifically used when services are implemented for the purpose of component to component communication
 
