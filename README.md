@@ -1,5 +1,14 @@
 # Observable
 
+## Table of Contents  
+* [Introduction](#Introduction)<br>
+* [Custom Observable](#Custom-Observable)<br>
+* [Custom Data Emitting Observable](#Custom-Data-Emitting-Observable)<br>
+* [Error or Completion Observable](#Error-or-Completion-Observable)<br>
+* [Operators](#Operators)<br>
+* [Implement Operators using Pipe](#Implement-Operators-using-Pipe)<br>
+* [Subjects](#Subjects)<br>
+
 ## Introduction
 
 1. Observable emits different kind of data
@@ -69,7 +78,7 @@
    }
    ~~~
 
-## Custom data emitting observable
+## Custom Data Emitting Observable
 
 1. Create an observable and emit the data [OBSERVABLE]
 
@@ -103,7 +112,7 @@
    // subscribe to the observable and listen the emitted data
    ~~~
 
-## Error / Completion Observable
+## Error or Completion Observable
 
 1. Throwing an error as well as completion from observable
 
@@ -235,7 +244,7 @@
 4. Subscribe to the above implemented subject in another component
 
    ~~~typescript
-   export class AppComponent {
+    export class AppComponent {
        private activatedSub: Subscription;
        constructor(private userSer : UserService) {}
        
